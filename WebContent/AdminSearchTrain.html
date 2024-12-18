@@ -1,62 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="ISO-8859-1">
-<title>E-Trains</title>
-<link rel="stylesheet" href="UserHome_Css.css">
-</head>
-<body>
-	<header>
-		<h1 class="hd">National Ticket Booking Spot</h1>
-		<div class="home">
-			<p class="menu">
-				<a href="AdminHome.html">Home</a>
-			</p>
-		</div>
-		<div class="home">
-			<p class="menu">
-				<a href="adminviewtrainfwd">View Trains</a>
-			</p>
-		</div>
-		<div class="home">
-			<p class="menu">
-				<a href="adminsearchtrainfwd">Search By TrainNo</a>
-			</p>
-		</div>
+  <head>
+    <meta charset="ISO-8859-1" />
+    <title>Admin Search Train - Railway Reservation System</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Railway Reservation System</h1>
+      <nav class="navbar">
+        <a href="AdminHome.html" class="nav-link">Home</a>
+        <a href="adminviewtrainfwd" class="nav-link">View Trains</a>
+        <a href="adminsearchtrainfwd" class="nav-link active"
+          >Search By TrainNo</a
+        >
+        <a href="addtrainfwd" class="nav-link">Add Train</a>
+        <a href="cancletrainfwd" class="nav-link">Delete Train</a>
+        <a href="updatetrain" class="nav-link">Update Train Details</a>
+        <a href="adminlogout" class="nav-link logout">Logout</a>
+      </nav>
+    </header>
 
-		<div class="home">
-			<p class="menu">
-				<a href="addtrainfwd">Add Train</a>
-			</p>
-		</div>
-		<div class="home">
-			<p class="menu">
-				<a href="cancletrainfwd">Delete Train </a>
-			</p>
-		</div>
-		<div class="home">
-			<p class="menu">
-				<a href="updatetrain">Update Train Details</a>
-			</p>
-		</div>
-		<div class="home">
-			<p class="menu">
-				<a href="adminlogout">Logout</a>
-			</p>
-		</div>
-	</header>
-	
-	<div class='tab'>
-		<p class='menu'> Hey, Admin ! Welcome to our new NITRTC Website
-		</p>
-	</div>
-	<div class="main">
-		<p class="menu">Search Trains</p>
-	</div>
-	<form action="adminsearchtrain" class="tab red" method="post">
-		<br /> TrainNumber: <input type="text" name="trainnumber"><br />
-		<br /> <input type="submit" value=" SEARCH TRAIN "><br />
-	</form>
-	<br />
-</body>
+    <main
+      class="main-content"
+      style="margin-top: 20px; display: flex; flex-direction: column"
+    >
+      <p
+        style="
+          color: white;
+          font-weight: 700;
+          font-size: 2rem;
+          padding-bottom: 20px;
+        "
+      >
+        Hey, Admin! Welcome to our new RRS Website
+      </p>
+
+      <section class="form-section">
+        <h2>Search Trains</h2>
+        <form action="adminsearchtrain" class="form" method="post">
+          <br />
+          Train Number: <input type="text" name="trainnumber" required /><br />
+          <br />
+          <button class="btn" type="submit">SEARCH TRAIN</button>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>

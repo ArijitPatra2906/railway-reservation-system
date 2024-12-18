@@ -1,73 +1,57 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>E-Trains</title>
-<link rel="stylesheet" href="UserHome_Css.css">
-</head>
-<body>
-	<header>
-		<h1 class="hd">National Ticket Booking Spot</h1>
-		<div class="home">
-			<p class="menu">
-				<a href="userhome">Home</a>
-			</p>
-		</div>
-		<div class="home">
-			<p class="menu">
-				<a href="userviewtrainfwd">View Trains</a>
-			</p>
-		</div>
-		<div class="home">
-			<p class="menu">
-				<a href="trainbwstnfwd">Trains Between Stations</a>
-			</p>
-		</div>
-		<div class="home">
-			<p class="menu">
-				<a href="bookingdetails">Ticket Booking History</a>
-			</p>
-		</div>
-		<div class="home">
-			<p class="menu">
-				<a href="fareenqfwd">Fare Enquiry</a>
-			</p>
-		</div>
-		<div class="home">
-			<p class="menu">
-				<a href="useravailfwd">Seat Availability</a>
-			</p>
-		</div>
-		<div class="home">
-			<p class="menu">
-				<a href="usersearchtrain">Search By TrainNo</a>
-			</p>
-		</div>
-		<div class="home">
-			<p class="menu">
-				<a href="userprofile">Profile</a>
-			</p>
-		</div>
-		<div class="home">
-			<p class="menu">
-				<a href="userlogout">Logout</a>
-			</p>
-		</div>
-	</header>
-	<div class="tab green">User Login</div>
-	<form action="userlogin" class="tab brown" method="post">
-		<br /> UserName: <input type="text" name="uname"
-			placeholder="Enter Your EmailId"> <br /> <br /> Password: <input
-			type="password" name="pword"> <br /> <br /> <input
-			type="submit" value=" LOGIN "><br />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Trains</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Railway Reservation System</h1>
+      <nav class="navbar">
+        <a href="userhome" class="nav-link">Home</a>
+        <a href="userviewtrainfwd" class="nav-link">View Trains</a>
+        <a href="trainbwstnfwd" class="nav-link">Trains Between Stations</a>
+        <a href="bookingdetails" class="nav-link">Ticket Booking History</a>
+        <a href="fareenqfwd" class="nav-link">Fare Enquiry</a>
+        <a href="useravailfwd" class="nav-link">Seat Availability</a>
+        <a href="usersearchtrain" class="nav-link">Search By TrainNo</a>
+        <a href="userprofile" class="nav-link">Profile</a>
+        <a href="userlogout" class="nav-link logout">Logout</a>
+      </nav>
+    </header>
 
-	</form>
-	<br />
-	<footer>
-		<address id="cent">
-			Contact: Mr. Shashi Raj<br />Email:<a href="mailto">thebittercode@gmail.com</a><br />PhoneNo:
-			9876543210
-		</address>
-	</footer>
-</body>
+    <main class="main-content">
+      <section class="form-section">
+        <h2>User Login</h2>
+        <form action="userlogin" method="post" class="form">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="uname"
+            placeholder="Enter Your Email"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="pword"
+            placeholder="Enter Your Password"
+            required
+          />
+
+          <button type="submit" class="btn">Login</button>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>

@@ -1,64 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="ISO-8859-1">
-<title>E-Trains</title>
-<link rel="stylesheet" href="UserHome_Css.css">
-</head>
-<body>
-	<header>
-		<h1 class="hd">National Ticket Booking Spot</h1>
-		<div class="home">
-			<p class="menu">
-				<a href="AdminHome.html">Home</a>
-			</p>
-		</div>
-		<div class="home">
-			<p class="menu">
-				<a href="adminviewtrainfwd">View Trains</a>
-			</p>
-		</div>
-		<div class="home">
-			<p class="menu">
-				<a href="adminsearchtrainfwd">Search By TrainNo</a>
-			</p>
-		</div>
+  <head>
+    <meta charset="ISO-8859-1" />
+    <title>E-Trains</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Railway Reservation Systemt</h1>
+      <nav class="navbar">
+        <a href="AdminHome.html" class="nav-link">Home</a>
+        <a href="adminviewtrainfwd" class="nav-link">View Trains</a>
+        <a href="adminsearchtrainfwd" class="nav-link">Search By TrainNo</a>
+        <a href="addtrainfwd" class="nav-link">Add Train</a>
+        <a href="cancletrainfwd" class="nav-link active">Delete Train</a>
+        <a href="updatetrain" class="nav-link">Update Train Details</a>
+        <a href="adminlogout" class="nav-link logout">Logout</a>
+      </nav>
+    </header>
+    <div class="tab">
+      <p class="menu">Hey, Admin ! Welcome to our new NITRTC Website</p>
+    </div>
 
-		<div class="home">
-			<p class="menu">
-				<a href="addtrainfwd">Add Train</a>
-			</p>
-		</div>
-		<div class="home">
-			<p class="menu">
-				<a href="cancletrainfwd">Delete Train </a>
-			</p>
-		</div>
-		<div class="home">
-			<p class="menu">
-				<a href="updatetrain">Update Train Details</a>
-			</p>
-		</div>
-		<div class="home">
-			<p class="menu">
-				<a href="adminlogout">Logout</a>
-			</p>
-		</div>
-	</header>
-	
-	<div class='tab'>
-		<p class='menu'> Hey, Admin ! Welcome to our new NITRTC Website
-		</p>
-	</div>
-	
-	<div class='main'>
-		<p class='menu'>Train Cancellation</p>
-	</div>
-	<form class="tab" action="admincancletrain" method="post">
-		Train Number:<input type="text" name="trainno"><br />
-		<br /> <input type="submit" value=" CANCLE TRAIN ">
-	</form>
-	<br />
-
-</body>
+    <div class="main">
+      <p class="menu">Train Cancellation</p>
+    </div>
+    <form class="tab" action="admincancletrain" method="post">
+      Train Number:<input type="text" name="trainno" /><br />
+      <br />
+      <input type="submit" value=" CANCLE TRAIN " />
+    </form>
+    <br />
+  </body>
 </html>

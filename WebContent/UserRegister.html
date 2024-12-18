@@ -1,50 +1,102 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>LOGIN</title>
-<link rel="stylesheet" href="UserHome_Css.css">
-</head>
-<body>
-	<header>
-		<h1 class="hd">National Ticket Booking Spot</h1>
-		<div class="main">
-			<span class="menu"> <a href="UserLogin.html">Login as User</a>
-			</span> <span class="menu"> <a href="UserRegister.html">New User
-					Register</a>
-			</span> <span class="menu"> <a href="AdminLogin.html">Login as
-					Admin</a>
-			</span>
-		</div>
-	</header>
-	<table class="tab brown hd">
-		<tr>
-			<td>New User Registration</td>
-		</tr>
-	</table>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Registration - Railway Reservation System</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="register.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Railway Reservation System</h1>
+      <div class="navbar">
+        <a href="UserLogin.html" class="register-nav-link">Login as User</a>
+        <a href="UserRegister.html" class="register-nav-link"
+          >New User Register</a
+        >
+        <a href="AdminLogin.html" class="register-nav-link">Login as Admin</a>
+      </div>
+    </header>
+    <main class="main-content-register">
+      <section class="form-section">
+        <h2>User Registration</h2>
+        <form action="userreg" method="post" class="register-form">
+          <div class="form-group">
+            <div>
+              <label for="firstname">First Name</label>
+              <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                placeholder="Enter first name"
+                required
+              />
+            </div>
+            <div>
+              <label for="lastname">Last Name</label>
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                placeholder="Enter last name"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <div>
+              <label for="phoneno">Phone No</label>
+              <input
+                type="number"
+                id="phoneno"
+                name="phoneno"
+                placeholder="Enter phone number"
+                required
+              />
+            </div>
+            <div>
+              <label for="mailid">Email Id</label>
+              <input
+                type="email"
+                id="mailid"
+                name="mailid"
+                placeholder="Enter Email ID"
+                required
+              />
+            </div>
+          </div>
 
-	<table class="tab green">
+          <label for="address">Address</label>
+          <textarea
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Enter your address"
+            required
+            rows="3"
+          ></textarea>
 
-		<tr>
-			<td>
-				<form action="userreg" method="post">
-					Email Id : <input type="email" name="mailid"
-						placeholder="Enter your emailId" required><br /> <br />
-					Password : <input type="password" name="pword" required><br />
-					<br /> FirstName: <input type="text" name="firstname" required><br />
-					<br /> Last Name: <input type="text" name="lastname" required><br />
-					<br /> Address : <input type="text" name="address" required><br />
-					<br /> Phone No : <input type="number" name="phoneno" required><br />
-					<br /> Photo : <input type="file" name="userphoto"><br />
-					<br /> <input type="submit"
-						value=" I AGREE FOR ALL TERMS & CONDITIONS ! REGISTER ME "
-						style="text-align: center">
-				</form>
-			</td>
+          <label for="pword">Password</label>
+          <input
+            type="password"
+            id="pword"
+            name="pword"
+            placeholder="Enter your password"
+            required
+          />
 
-		</tr>
-	</table>
+          <label for="userphoto">Upload Photo</label>
+          <input type="file" accept="" id="userphoto" name="userphoto" />
 
-
-</body>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>

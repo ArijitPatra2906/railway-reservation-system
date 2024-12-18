@@ -1,33 +1,51 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>LOGIN</title>
-<link rel="stylesheet" href="UserHome_Css.css">
-</head>
-<body>
-	<header>
-		<h1 class="hd">National Ticket Booking Spot</h1>
-		<div class="main">
-			<span class="menu">
-				<a href="UserLogin.html">Login as User</a>
-			</span>
-			<span class="menu">
-				<a href="UserRegister.html">New User Register</a>
-			</span>
-			<span class="menu">
-				<a href="AdminLogin.html">Login as Admin</a>
-			</span>
-		</div>
-	</header>
-	<div class="tab green">User Login</div>
-	<form action="userlogin" class="tab brown" method="post">
-		<br /> UserName: <input type="text" name="uname"
-			placeholder="Enter Your EmailId"> <br /> <br /> Password: <input
-			type="password" name="pword"> <br /> <br /> <input
-			type="submit" value=" LOGIN "><br />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Login - Railway Reservation System</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Railway Reservation System</h1>
+      <div class="navbar">
+        <a href="UserLogin.html" class="login-nav-link">Login as User</a>
+        <a href="UserRegister.html" class="login-nav-link">New User Register</a>
+        <a href="AdminLogin.html" class="login-nav-link">Login as Admin</a>
+      </div>
+    </header>
+    <main class="main-content">
+      <section class="form-section">
+        <h2>User Login</h2>
+        <form action="userlogin" method="post" class="form">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="uname"
+            placeholder="Enter Your Email"
+            required
+          />
 
-	</form>
-	<br />
-</body>
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="pword"
+            placeholder="Enter Your Password"
+            required
+          />
+
+          <button type="submit" class="btn">Login</button>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>

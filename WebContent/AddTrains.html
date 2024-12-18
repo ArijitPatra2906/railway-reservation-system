@@ -1,62 +1,65 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="ISO-8859-1">
-<title>E-Trains</title>
-<link rel="stylesheet" href="UserHome_Css.css">
-</head>
-<body>
-	<header>
-		<h1 class="hd">National Ticket Booking Spot</h1>
-		<div class="home">
-			<p class="menu">
-				<a href="AdminHome.html">Home</a>
-			</p>
-		</div>
-		<div class="home">
-			<p class="menu">
-				<a href="adminviewtrainfwd">View Trains</a>
-			</p>
-		</div>
-		<div class="home">
-			<p class="menu">
-				<a href="adminsearchtrainfwd">Search By TrainNo</a>
-			</p>
-		</div>
+  <head>
+    <meta charset="ISO-8859-1" />
+    <title>Add Trains - Railway Reservation System</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Railway Reservation System</h1>
+      <nav class="navbar">
+        <a href="AdminHome.html" class="nav-link">Home</a>
+        <a href="adminviewtrainfwd" class="nav-link">View Trains</a>
+        <a href="adminsearchtrainfwd" class="nav-link">Search By TrainNo</a>
+        <a href="addtrainfwd" class="nav-link active">Add Train</a>
+        <a href="cancletrainfwd" class="nav-link">Delete Train</a>
+        <a href="updatetrain" class="nav-link">Update Train Details</a>
+        <a href="adminlogout" class="nav-link logout">Logout</a>
+      </nav>
+    </header>
 
-		<div class="home">
-			<p class="menu">
-				<a href="addtrainfwd">Add Train</a>
-			</p>
-		</div>
-		<div class="home">
-			<p class="menu">
-				<a href="cancletrainfwd">Delete Train </a>
-			</p>
-		</div>
-		<div class="home">
-			<p class="menu">
-				<a href="updatetrain">Update Train Details</a>
-			</p>
-		</div>
-		<div class="home">
-			<p class="menu">
-				<a href="adminlogout">Logout</a>
-			</p>
-		</div>
-	</header>
-	<div class='main'>
-		<p class='menu'> Add Trains </p>
-	</div>
-	<form class="tab" action="adminaddtrain" method="post">
-		<br /> Train Number:<input type="text" name="trainno"><br />
-		<br /> Train Name: <input type="text" name="trainname"><br />
-		<br /> From Station: <input type="text" name="fromstation"><br />
-		<br /> To Station: <input type="text" name="tostation"><br />
-		<br /> Available: <input type="text" name="available"><br />
-		<br /> Fare (INR): <input type="text" name="fare"><br />
-		<br /> <input type="submit" value=" ADD TRAIN ">
-	</form>
-	<br />
-</body>
+    <main class="main-content" style="margin-top: 20px">
+      <section class="form-section">
+        <h2>Add Trains</h2>
+        <form class="form" action="adminaddtrain" method="post">
+          <div class="form-group">
+            <div>
+              <label for="trainno">Train Number:</label>
+              <input type="text" name="trainno" id="trainno" required />
+            </div>
+            <div>
+              <label for="trainname">Train Name:</label>
+              <input type="text" name="trainname" id="trainname" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <div>
+              <label for="fromstation">From Station:</label>
+              <input type="text" name="fromstation" id="fromstation" required />
+            </div>
+            <div>
+              <label for="tostation">To Station:</label>
+              <input type="text" name="tostation" id="tostation" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <div>
+              <label for="available">Available:</label>
+              <input type="text" name="available" id="available" required />
+            </div>
+            <div>
+              <label for="fare">Fare (INR):</label>
+              <input type="text" name="fare" id="fare" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <button type="submit" class="btn">ADD TRAIN</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <br />
+  </body>
 </html>
